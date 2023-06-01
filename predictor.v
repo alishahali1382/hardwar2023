@@ -6,7 +6,7 @@ module predictor(
 	output reg prediction
 );
 
-reg [1:0] counter;
+reg [1:0] counter=3;
 
 always @(posedge clk) begin
 	if (result) begin
