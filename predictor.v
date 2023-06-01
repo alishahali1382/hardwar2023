@@ -6,7 +6,6 @@ module predictor(input wire request, result, clk, taken, output reg prediction);
   always @(posedge clk) begin
     if(request == 1) begin
       prediction = nextState[1];
-      $display("%b  ", nextState);
     end
     
     if(result == 1) begin
