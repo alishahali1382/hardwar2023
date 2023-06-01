@@ -21,7 +21,7 @@ always @(posedge clk) begin
 		end
 	end
 	if (request) begin
-		prediction = (counter > 1'b1);
+		prediction = counter[1];
 	end
 end
 
